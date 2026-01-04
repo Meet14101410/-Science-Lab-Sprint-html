@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Science Lab Sprint</title>
+<style>
+body{font-family:Arial;text-align:center;background:#e6f2ff}
+#lab{font-size:80px;cursor:pointer}
+#score{font-size:24px}
+</style>
+</head>
+<body>
+<h2>Science Lab Sprint</h2>
+<p>Click the flask to earn points!</p>
+<div id="lab">🧪</div>
+<p id="score">Score: 0</p>
+
+<script>
+let s=0;
+document.getElementById("lab").onclick=()=>{
+ s++;
+ document.getElementById("score").innerText="Score: "+s;
+}
+</script>
+</body>
+</html>
